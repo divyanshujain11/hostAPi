@@ -6,10 +6,7 @@ const getAllProducts=async(req,res)=>{
     
     if(intensity){
         queryObject.intensity=intensity;
-    }
-     if(likelihood){
-        queryObject.likelihood=likelihood;
-    }    
+    }   
     if(country){
         queryObject.country={$regex:country,$options:"i"};
     }
