@@ -1,7 +1,7 @@
 const product = require("../models/product");
 
 const getAllProducts=async(req,res)=>{
-    const { intensity,country,sector,likelihood,sort,select}= req.query;
+    const { intensity,country,sector,likelihood}= req.query;
     const queryObject={};
     
     if(intensity){
